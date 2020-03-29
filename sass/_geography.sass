@@ -1,0 +1,200 @@
+.geography
+	padding-top: 150px
+	color: #323232
+	line-height: 1.15
+	&-text
+		font-size: 35px
+		+bold
+		&-span
+			color: #0288D1
+	&-map
+		position: relative
+		& div:nth-child(1)
+			top: 14%
+			left: 14%
+		& div:nth-child(2)
+			top: 25%
+			left: 18%
+		& div:nth-child(3)
+			top: 29%
+			left: 13%
+		& div:nth-child(4)
+			top: 47%
+			left: 2.5%
+		& div:nth-child(5)
+			top: 48.5%
+			left: 22.5%
+		& div:nth-child(6)
+			top: 47%
+			left: 28.5%
+		& div:nth-child(7)
+			top: 52%
+			left: 26%
+		& div:nth-child(8)
+			top: 60%
+			left: 49.5%
+		& div:nth-child(9)
+			top: 63%
+			left: 40%
+		& div:nth-child(10)
+			top: 66%
+			left: 74%
+			align-items: flex-end
+		&-item
+			display: flex
+			flex-direction: column-reverse
+			position: absolute
+			&-block
+				padding: 10px 20px
+				background-color: #ffffff
+				box-shadow: 0 0 15px rgba(#000000, 0.2)
+				opacity: 0
+				transition: 0.2s
+				&-p1
+					font-size: 16px
+					+bold
+					color: #0288D1
+					margin-bottom: 5px
+				&-p2
+					border-top: 1px solid #E6E6E3
+					padding-top: 5px
+					font-size: 14px
+			&-text
+				margin-top: 15px
+				display: flex
+				align-items: center
+				cursor: pointer
+				z-index: 1
+				&:hover div
+					border: 3px solid #FFA700
+					cursor: pointer
+				&:hover ~ .geography-map-item-block
+					opacity: 1
+					z-index: 1
+				&-circle
+					width: 20px
+					height: 20px
+					border: 3px solid #0288D1
+					border-radius: 100%
+					transition: 0.2s
+				&-p
+					margin-left: 10px
+					height: 13.3px
+					font-size: 14px
+		&-img
+			width: 100%
+	&-graf
+		margin-top: 50px
+		&-text
+			font-size: 35px
+			+bold
+		&-block
+			display: flex
+			margin-top: 30px
+			margin-bottom: 100px
+			justify-content: space-between
+			& div:nth-child(1) div
+					background: #0288D1
+					border-radius: 50px 0 0 50px
+					width: 100%
+					transition: 0.2s
+			& div:nth-child(2) div
+					background: #2C364A
+					width: 100%
+					transition: 0.2s
+			& div:nth-child(3) div
+					background: #E6E6E6
+					width: 100%
+					transition: 0.2s
+			& div:nth-child(4) div
+					background: #F2F2F2
+					border-radius: 0 50px 50px 0
+					width: 100%
+					transition: 0.2s
+			& div:nth-child(1)
+				width: 46%
+			& div:nth-child(2)
+				width: 27%
+			& div:nth-child(3)
+				width: 18%
+			& div:nth-child(4)
+				width: 9%
+			&-item
+				&:hover .geography-graf-block-item-graf
+					background: #FFA700
+					box-shadow: 0 0 15px rgba(#FFA700 , 1)
+				&-p
+					font-size: 30px
+					+bold
+					color: #0288D1
+					&-2
+						font-size: 14px
+				&-graf
+					margin-top: 15px
+					height: 20px
+	
+@media screen and (max-width: 1050px)
+	.geography
+		&-map
+			& div:nth-child(1)
+				top: 11%
+				left: 14%
+			& div:nth-child(2)
+				top: 22%
+				left: 18%
+			& div:nth-child(3)
+				top: 26%
+				left: 13%
+			& div:nth-child(4)
+				top: 44%
+				left: 2.5%
+			& div:nth-child(5)
+				display: none
+			& div:nth-child(6)
+				top: 44%
+				left: 28.5%
+			& div:nth-child(7)
+				top: 49%
+				left: 26%
+			& div:nth-child(8)
+				top: 57%
+				left: 49.5%
+			& div:nth-child(9)
+				top: 60%
+				left: 40%
+			& div:nth-child(10)
+				display: none
+@media screen and (max-width: 950px)
+	.geography
+		&-map
+			& div:nth-child(1)
+				top: 9%
+				left: 14%
+			& div:nth-child(2)
+				top: 20%
+				left: 18%
+			& div:nth-child(3)
+				top: 24%
+				left: 13%
+			& div:nth-child(4)
+				top: 42%
+				left: 2.5%
+			& div:nth-child(5)
+				display: none
+			& div:nth-child(6)
+				top: 42%
+				left: 28.5%
+			& div:nth-child(7)
+				top: 47%
+				left: 26%
+			& div:nth-child(8)
+				top: 53%
+				left: 49.5%
+			& div:nth-child(9)
+				top: 58%
+				left: 40%
+			& div:nth-child(10)
+				display: none
+@media screen and (max-width: 850px)
+	.geography
+		display: none

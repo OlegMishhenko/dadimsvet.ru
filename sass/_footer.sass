@@ -1,0 +1,120 @@
+.footer
+	padding-top: 50px
+	color: #ffffff
+	line-height: 1.15
+	background: #2C364A
+	padding-bottom: 50px
+	&-block
+		display: flex
+		justify-content: space-between
+		&-logo
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			&-item
+				display: flex
+				align-items: center
+				text-decoration: none
+				&-img
+					width: 45px
+					margin-top: 4px
+				&-text
+					margin-left: 15px
+					text-transform: uppercase
+					color: #ffffff
+					&-1
+						margin-bottom: 3.2px
+						display: block
+						font-size: 8px
+						+regular
+					&-2
+						display: block
+						font-size: 16px
+						+bold
+						letter-spacing: 3.2px
+					&-3
+						margin-top: 2px
+						display: block
+						font-size: 13px
+						+bold
+			&-text
+				margin-top: 10px
+				color: #969BA5
+				font-size: 12px
+			&-a
+				margin-top: 50px
+				font-size: 14px
+				color: #0288D1
+				display: block
+				text-decoration: none
+				padding-bottom: 1px
+				border-bottom: 1px dashed rgba(#0288D1, 1)
+				transition: 0.2s
+				&:hover
+					border-bottom: 1px dashed rgba(#0288D1, 0)
+		&-phone
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			&-number
+				font-size: 20px
+				+bold
+				color: #ffffff
+				text-decoration: none
+			&-mail
+				margin-top: 5px
+				font-size: 14px
+				color: #0288D1
+				display: block
+				text-decoration: none
+				padding-bottom: 1px
+				border-bottom: 1px dashed rgba(#0288D1, 1)
+				transition: 0.2s
+				&:hover
+					border-bottom: 1px dashed rgba(#0288D1, 0)
+			&-button
+				margin-top: 85px
+				border: none
+				background: #FFA700
+				color: #323232
+				border-radius: 5px
+				padding: 13px 36px 10px 36px
+				font-size: 11px
+				text-transform: uppercase
+				transition: 0.2s
+				box-shadow: 0 0 8px #FFA700
+				+bold
+				&:hover
+					background: #FFA700
+					box-shadow: 0 0 20px #FFA700
+
+@media screen and (max-width: 600px)
+	.footer
+		&-block
+			&-logo
+				width: 50%
+				&-item
+					&-img
+					&-text
+				&-phone
+@media screen and (max-width: 500px)
+	.footer
+		&-block
+			flex-direction: column-reverse
+			&-logo
+				align-items: center
+				text-align: center
+				width: 100%
+				&-item
+					&-img
+						display: none
+					&-text
+						display: none
+				&-text
+					margin-top: 50px
+				&-a
+					margin-top: 10px
+			&-phone
+				align-items: center
+				&-button
+					margin-top: 30px

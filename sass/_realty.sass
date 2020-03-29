@@ -1,0 +1,103 @@
+.realty
+	padding-top: 200px
+	background-color: #F2F2F2
+	&-text
+		line-height: 1.15
+		&-1
+			display: block
+			color: #0288D1
+			+bold
+			font-size: 35px
+		&-2
+			display: block
+			color: #323232
+			+bold
+			font-size: 35px
+	&-list
+		display: flex
+		flex-wrap: wrap
+		margin-top: 20px
+		padding-bottom: 100px
+		&-block
+			margin-top: 50px
+			width: calc(100% / 3)
+			min-width: 385px
+			display: flex
+			align-items: flex-end
+			padding-right: 3%
+			&-img
+				width: 55px
+				height: 55px
+				margin-right: 30px
+			&-text
+				border-left: 1px solid #C8C8C8
+				padding-left: 30px
+				font-size: 14px
+				line-height: 1.3
+
+@media screen and (max-width: 1180px)
+	.realty
+		&-list
+			&-block
+				margin-right: 5%
+				width: calc(80% / 2)
+				min-width: 300px
+				padding-right: 0
+@media screen and (max-width: 850px)
+	.realty
+		&-list
+			justify-content: space-between
+			&-block
+				margin-right: 0
+				min-width: none
+				width: 45%
+				&-text
+					font-size: 13px
+@media screen and (max-width: 650px)
+	.realty
+		&-list
+			justify-content: space-between
+			&-block
+				margin-right: 0
+				min-width: 200px
+				width: 47%
+				align-items: center
+				&-img
+					width: 40px
+					height: 40px
+					margin-right: 20px
+				&-text
+					padding-left: 20px
+				&-text
+@media screen and (max-width: 500px)
+	.realty
+		&-text
+			&-1
+				font-size: 30px
+			&-2
+				font-size: 30px
+@media screen and (max-width: 480px)
+	.realty
+		&-list
+			justify-content: space-between
+			&-block
+				margin-right: 0
+				min-width: 100%
+				width: 100%
+				align-items: center
+				&-img
+					width: 50px
+					height: 50px
+					margin-right: 30px
+				&-text
+					padding-left: 30px
+				&-text
+@media screen and (max-width: 400px)
+	.realty
+		&-list
+			&-block
+				margin-right: 0
+				min-width: 260px
+				width: 100%
+				&-text
+					font-size: 13px

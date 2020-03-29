@@ -1,0 +1,127 @@
+.gratitudes
+	padding-top: 150px
+	color: #323232
+	line-height: 1.15
+	background: #ffffff
+	padding-bottom: 100px
+	&-text
+		font-size: 35px
+		+bold
+		margin-bottom: 50px
+	&-block
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&-item
+			width: 270px
+			height: 370px
+			background-size: cover
+			margin-top: 2%
+			display: flex
+			align-items: center
+			justify-content: center
+			box-shadow: 0 0 15px rgba(#000000, 0.6)
+			cursor: pointer
+			&:nth-child(1)
+				background-image: url(../img/reviews/mini1.jpg)
+			&:nth-child(2)
+				background-image: url(../img/reviews/mini2.jpg)
+			&:nth-child(3)
+				background-image: url(../img/reviews/mini3.jpg)
+			&:nth-child(4)
+				background-image: url(../img/reviews/mini4.jpg)
+			&:nth-child(5)
+				background-image: url(../img/reviews/mini5.jpg)
+			&:nth-child(6)
+				background-image: url(../img/reviews/mini6.jpg)
+			&:nth-child(7)
+				background-image: url(../img/reviews/mini7.jpg)
+			&:nth-child(8)
+				background-image: url(../img/reviews/mini8.jpg)
+			&:hover .gratitudes-block-item-plug
+				opacity: 0.8
+			&-plug
+				width: 212px
+				height: 312px
+				background-image: url(../img/reviews/lupadlakeysovbid.svg)
+				background-size: cover
+				opacity: 0
+				transition: 0.2s
+				pointer-events: none
+
+@media screen and (max-width: 500px)  
+	.gratitudes
+		&-text
+			font-size: 30px
+@media screen and (max-width: 1150px)  
+	.gratitudes
+		&-block
+			&-item
+				width: 230px
+				height: 313px
+				&-plug
+					width: 180px
+					height: 267px
+@media screen and (max-width: 1000px)  
+	.gratitudes
+		&-block
+			&-item
+				width: 200px
+				height: 273px
+				&-plug
+					width: 156px
+					height: 231px
+@media screen and (max-width: 890px)  
+	.gratitudes
+		&-block
+			&-item
+				width: 170px
+				height: 232px
+				&-plug
+					width: 133px
+					height: 196px
+@media screen and (max-width: 770px)  
+	.gratitudes
+		&-block
+			&-item
+				width: 270px
+				height: 367px
+				&-plug
+					width: 215px
+					height: 311px
+@media screen and (max-width: 600px)  
+	.gratitudes
+		&-block
+			&-item
+				width: 230px
+				height: 313px
+				&-plug
+					width: 180px
+					height: 267px
+@media screen and (max-width: 520px)  
+	.gratitudes
+		&-block
+			&-item
+				width: 190px
+				height: 258px
+				&-plug
+					width: 149px
+					height: 218px
+@media screen and (max-width: 440px)  
+	.gratitudes
+		&-block
+			&-item
+				width: 160px
+				height: 218px
+				&-plug
+					width: 126px
+					height: 184px
+@media screen and (max-width: 370px)  
+	.gratitudes
+		&-block
+			&-item
+				width: 125px
+				height: 170px
+				&-plug
+					width: 99px
+					height: 144px

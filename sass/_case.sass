@@ -1,0 +1,663 @@
+.case
+	padding-top: 150px
+	color: #323232
+	line-height: 1.15
+	background: #F2F2F2
+	padding-bottom: 100px
+	overflow: hidden
+	&-wrapper
+		position: absolute
+		transition: 0.4s
+	&-control
+		transition: 0.2s
+		margin-top: 630px
+		display: flex
+		align-items: center
+		justify-content: center
+		&-left
+			height: 60px
+			width: 40px
+			border: none
+			background: none
+			margin-right: 100px
+			&-img
+				margin: 10px 10px
+				height: 50%
+				width: 50%
+				clip-path: polygon(100% 0, 35% 50%, 100% 100%, 65% 100%, 0% 50%, 65% 0)
+				background: #0288D1
+		&-right
+			height: 60px
+			width: 40px
+			border: none
+			background: none
+			margin-left: 100px
+			&-img
+				margin: 10px 10px
+				height: 50%
+				width: 50%
+				clip-path: polygon(35% 0, 100% 50%, 35% 100%, 0 100%, 65% 50%, 0 0)
+				background: #0288D1
+		&-buttons
+			&-item
+				height: 25px
+				width: 25px
+				background: #E6E6E3
+				border: none
+				border-radius: 100%
+				margin: 0 25px
+				transition: 0.2s
+				&:hover
+					background: #0288D1
+				&-active
+					box-shadow: 0 0 10px #0288D1
+					background: #0288D1
+	&-text
+		font-size: 35px
+		+bold
+		margin-bottom: 90px
+		&-span
+			color: #0288D1
+	&-slider
+		position: relative
+		&-slid
+			display: flex
+			justify-content: space-between
+			&-text
+				width: 35%
+				&-img
+					display: flex
+					&-1
+						width: 90px
+						height: 135px
+						background-image: url(../img/burdmando.jpg)
+						background-size: cover
+						margin-right: 30px
+						&_2
+							width: 90px
+							height: 135px
+							background-image: url(../img/energomostdo.jpg)
+							background-size: cover
+							margin-right: 30px
+						&_3
+							width: 90px
+							height: 135px
+							background-image: url(../img/komstroido.jpg)
+							background-size: cover
+							margin-right: 30px
+						&_4
+							width: 90px
+							height: 135px
+							background-image: url(../img/avdushkindo.jpg)
+							background-size: cover
+							margin-right: 30px
+						&_5
+							width: 90px
+							height: 135px
+							background-image: url(../img/darienkodo.jpg)
+							background-size: cover
+							margin-right: 30px
+					&-2
+						width: 90px
+						height: 135px
+						background-image: url(../img/burdmanposle.jpg)
+						background-size: cover
+						&_2
+							width: 90px
+							height: 135px
+							background-image: url(../img/energomostposle.jpg)
+							background-size: cover
+						&_3
+							width: 90px
+							height: 135px
+							background-image: url(../img/komstroiposle.jpg)
+							background-size: cover
+						&_4
+							width: 90px
+							height: 135px
+							background-image: url(../img/avdushkinposle.jpg)
+							background-size: cover
+						&_5
+							width: 90px
+							height: 135px
+							background-image: url(../img/darienkoposle.jpg)
+							background-size: cover
+					&-plug
+						width: 100%
+						height: 100%
+						background-image: url(../img/lupadlakeysov.svg)
+						background-size: cover
+						background-position: center
+						opacity: 0
+						transition: 0.2s
+						pointer-events: none
+				&-p
+					font-size: 22px
+					+bold
+					margin-bottom: 25px
+					&-1
+						font-size: 16px
+						margin-bottom: 20px
+						&-span
+							+bold
+							&-line
+								padding-bottom: 3px
+								+bold
+								border-bottom: 2px solid #FFA700
+			&-graf
+				width: 65%
+				position: relative
+				&-before
+					position: absolute
+					top: 15px
+					left: 300px
+					z-index: 1
+					&:hover ~ .case-slider-slid-graf-case circle:nth-child(2)
+						stroke: #FFA700
+					&_2
+						position: absolute
+						top: 60px
+						left: 375px
+						z-index: 1
+						&:hover ~ .case-slider-slid-graf-case circle:nth-child(2)
+							stroke: #FFA700
+					&_3
+						position: absolute
+						top: 88px
+						left: 375px
+						z-index: 1
+						&:hover ~ .case-slider-slid-graf-case circle:nth-child(2)
+							stroke: #FFA700
+					&_4
+						position: absolute
+						top: 0px
+						left: 160px
+						z-index: 1
+						&:hover ~ .case-slider-slid-graf-case circle:nth-child(2)
+							stroke: #FFA700
+					&_5
+						position: absolute
+						top: 22px
+						left: 96px
+						z-index: 1
+						&:hover ~ .case-slider-slid-graf-case circle:nth-child(2)
+							stroke: #FFA700
+					&-1
+						font-size: 16px
+					&-2
+						font-size: 35px
+						+bold
+						&-span
+							font-size: 20px
+				&-after
+					z-index: 1
+					position: absolute
+					top: 235px
+					left: 400px
+					&:hover ~ .case-slider-slid-graf-case circle:nth-child(3)
+						stroke: #FFA700
+					&_2
+						z-index: 1
+						position: absolute
+						top: 335px
+						left: 350px
+						&:hover ~ .case-slider-slid-graf-case circle:nth-child(3)
+							stroke: #FFA700
+					&_3
+						z-index: 1
+						position: absolute
+						top: 187px
+						left: 410px
+						&:hover ~ .case-slider-slid-graf-case circle:nth-child(3)
+							stroke: #FFA700
+					&_4
+						z-index: 1
+						position: absolute
+						top: 315px
+						left: 367px
+						&:hover ~ .case-slider-slid-graf-case circle:nth-child(3)
+							stroke: #FFA700
+					&_5
+						z-index: 1
+						position: absolute
+						top: 175px
+						left: 410px
+						&:hover ~ .case-slider-slid-graf-case circle:nth-child(3)
+							stroke: #FFA700
+					&-1
+						font-size: 16px
+					&-2
+						font-size: 45px
+						+bold
+						&-span
+							font-size: 20px
+				&-case
+					position: relative
+					width: 400px
+					height: 400px
+					&-1
+						width: 100%
+						height: 100%
+						position: absolute
+						fill: none
+						stroke: #E6E6E3
+						stroke-width: 10%
+						stroke-linecap: round
+					&-2
+						position: absolute
+						width: 100%
+						height: 100%
+						position: absolute
+						fill: none
+						stroke: #2C364A
+						stroke-width: 5%
+						stroke-linecap: round
+						transition: 0.2s
+						stroke-dasharray: 1100
+						stroke-dashoffset: (1100 - (1100*80) / 100)
+						&:hover
+							stroke: #FFA700
+						&_2
+							position: absolute
+							width: 100%
+							height: 100%
+							position: absolute
+							fill: none
+							stroke: #AFAFAF
+							stroke-width: 5%
+							stroke-linecap: round
+							transition: 0.2s
+							&:hover
+								stroke: #FFA700
+						&_3
+							position: absolute
+							width: 100%
+							height: 100%
+							position: absolute
+							fill: none
+							stroke: #2C364A
+							stroke-width: 5%
+							stroke-linecap: round
+							transition: 0.2s
+							stroke-dasharray: 1100
+							stroke-dashoffset: (1100 - (1100*90) / 100)
+							&:hover
+								stroke: #FFA700
+						&_4
+							position: absolute
+							width: 100%
+							height: 100%
+							position: absolute
+							fill: none
+							stroke: #2C364A
+							stroke-width: 5%
+							stroke-linecap: round
+							transition: 0.2s
+							stroke-dasharray: 1100
+							stroke-dashoffset: (1100 - (1100*67) / 100)
+							&:hover
+								stroke: #FFA700
+						&_5
+							position: absolute
+							width: 100%
+							height: 100%
+							position: absolute
+							fill: none
+							stroke: #2C364A
+							stroke-width: 5%
+							stroke-linecap: round
+							transition: 0.2s
+							stroke-dasharray: 1100
+							stroke-dashoffset: (1100 - (1100*61) / 100)
+							&:hover
+								stroke: #FFA700
+					&-3
+						position: absolute
+						width: 100%
+						height: 100%
+						position: absolute
+						fill: none
+						stroke: #0288D1
+						stroke-width: 5%
+						stroke-linecap: round
+						transition: 0.2s
+						stroke-dasharray: 1200
+						stroke-dashoffset: (1200 - (1200*7) / 100)
+						&:hover
+							stroke: #FFA700
+						&_2
+							position: absolute
+							width: 100%
+							height: 100%
+							position: absolute
+							fill: none
+							stroke: #0288D1
+							stroke-width: 5%
+							stroke-linecap: round
+							transition: 0.2s
+							stroke-dasharray: 1200
+							stroke-dashoffset: (1200 - (1200*21) / 100)
+							&:hover
+								stroke: #FFA700
+						&_3
+							position: absolute
+							width: 100%
+							height: 100%
+							position: absolute
+							fill: none
+							stroke: #0288D1
+							stroke-width: 5%
+							stroke-linecap: round
+							transition: 0.2s
+							stroke-dasharray: 1200
+							stroke-dashoffset: (1200 - (1200*3) / 100)
+							&:hover
+								stroke: #FFA700
+						&_4
+							position: absolute
+							width: 100%
+							height: 100%
+							position: absolute
+							fill: none
+							stroke: #0288D1
+							stroke-width: 5%
+							stroke-linecap: round
+							transition: 0.2s
+							stroke-dasharray: 1200
+							stroke-dashoffset: (1200 - (1200*16) / 100)
+							&:hover
+								stroke: #FFA700
+						&_5
+							position: absolute
+							width: 100%
+							height: 100%
+							position: absolute
+							fill: none
+							stroke: #0288D1
+							stroke-width: 5%
+							stroke-linecap: round
+							transition: 0.2s
+							stroke-dasharray: 1200
+							stroke-dashoffset: (1200 - (1200*2) / 100)
+							&:hover
+								stroke: #FFA700
+
+.case-slider-slid-text-img-slide
+	&:hover div
+		opacity: 0.8
+		cursor: pointer
+
+@media screen and (max-width: 500px)  
+	.case
+		&-text
+			font-size: 30px
+@media screen and (max-width: 1080px)  
+	.case
+		&-control
+			margin-top: 660px
+		&-slider
+			&-slid
+				&-text
+					width: 35%
+					&-p
+						font-size: 20px
+						&-1
+							font-size: 15px
+				&-graf
+					&-case
+						width: 350px
+						height: 350px
+						&-1
+						&-2
+							stroke-dashoffset: (1100 - (1100*73) / 100)
+							&_2
+							&_3
+								stroke-dashoffset: (1100 - (1100*78) / 100)
+							&_4
+								stroke-dashoffset: (1100 - (1100*60) / 100)
+							&_5
+								stroke-dashoffset: (1100 - (1100*56) / 100)
+						&-3
+							stroke-dashoffset: (1200 - (1200*5) / 100)
+							&_2
+								stroke-dashoffset: (1200 - (1200*18) / 100)
+							&_3
+								stroke-dashoffset: (1200 - (1200*2) / 100)
+							&_4
+								stroke-dashoffset: (1200 - (1200*12) / 100)
+							&_5
+								stroke-dashoffset: (1200 - (1200*2) / 100)
+					&-before
+						top: 70px
+						left: 280px
+						&_2
+							top: 60px
+							left: 325px
+						&_3
+							top: 95px
+							left: 320px
+						&_4
+							top: 0px
+							left: 155px
+						&_5
+							top: 10px
+							left: 110px
+						&-1
+							font-size: 14px
+						&-2
+							font-size: 30px
+					&-after
+						top: 255px
+						left: 315px
+						&_2
+							top: 350px
+							left: 200px
+						&_3
+							top: 215px
+							left: 330px
+						&_4
+							top: 315px
+							left: 256px
+						&_5
+							top: 215px
+							left: 335px
+						&-1
+							font-size: 14px
+						&-2
+							font-size: 35px
+@media screen and (max-width: 890px)  
+	.case
+		&-text
+			margin-bottom: 60px
+		&-control
+			margin-top: 1000px
+			justify-content: space-between
+			&-left
+				margin-right: 5%
+			&-right
+				margin-left: 5%
+			&-buttons
+				&-item
+					margin: 0 25px
+		&-slider
+			&-slid
+				flex-direction: column
+				&-text
+					margin-top: 80px
+					width: 100%
+					&-p
+						font-size: 20px
+						&-1
+							font-size: 15px
+				&-graf
+					width: 100%
+					&-case
+						width: 350px
+						height: 350px
+						&-1
+						&-2
+							stroke-dashoffset: (1100 - (1100*73) / 100)
+							&_2
+							&_3
+								stroke-dashoffset: (1100 - (1100*78) / 100)
+							&_4
+								stroke-dashoffset: (1100 - (1100*60) / 100)
+							&_5
+								stroke-dashoffset: (1100 - (1100*56) / 100)
+						&-3
+							stroke-dashoffset: (1200 - (1200*5) / 100)
+							&_2
+								stroke-dashoffset: (1200 - (1200*18) / 100)
+							&_3
+								stroke-dashoffset: (1200 - (1200*2) / 100)
+							&_4
+								stroke-dashoffset: (1200 - (1200*12) / 100)
+							&_5
+								stroke-dashoffset: (1200 - (1200*2) / 100)
+					&-before
+						top: 70px
+						left: 280px
+						&_2
+							top: 60px
+							left: 325px
+						&_3
+							top: 95px
+							left: 320px
+						&_4
+							top: 0px
+							left: 155px
+						&_5
+							top: 10px
+							left: 110px
+						&-1
+							font-size: 14px
+						&-2
+							font-size: 30px
+					&-after
+						top: 255px
+						left: 315px
+						&_2
+							top: 350px
+							left: 200px
+						&_3
+							top: 215px
+							left: 330px
+						&_4
+							top: 315px
+							left: 256px
+						&_5
+							top: 215px
+							left: 335px
+						&-1
+							font-size: 14px
+						&-2
+							font-size: 35px
+@media screen and (max-width: 570px)  
+	.case
+		&-control
+			margin-top: 570px
+			&-left
+			&-right
+			&-buttons
+				&-item
+					margin: 0 15px
+		&-slider
+			&-slid
+				&-text
+					margin-top: 0
+					&-p
+						&-1
+				&-graf
+					display: none
+					&-case
+@media screen and (max-width: 480px)  
+	.case
+		&-control
+			margin-top: 580px
+			&-left
+				display: none
+			&-right
+				display: none
+			&-buttons
+				width: 100%
+				display: flex
+				justify-content: space-between
+				&-item
+					margin: 0
+		&-slider
+			&-slid
+				&-text
+					margin-top: 0
+					&-p
+						&-1
+				&-graf
+					display: none
+					&-case
+@media screen and (max-width: 410px)  
+	.case
+		&-control
+			margin-top: 600px
+			&-left
+				display: none
+			&-right
+				display: none
+			&-buttons
+				width: 100%
+				display: flex
+				justify-content: space-between
+				&-item
+		&-slider
+			&-slid
+				&-text
+					margin-top: 0
+					&-p
+						&-1
+				&-graf
+					display: none
+					&-case
+@media screen and (max-width: 370px)  
+	.case
+		&-control
+			margin-top: 620px
+			&-left
+				display: none
+			&-right
+				display: none
+			&-buttons
+				width: 100%
+				display: flex
+				justify-content: space-between
+				&-item
+		&-slider
+			&-slid
+				&-text
+					margin-top: 0
+					&-p
+						&-1
+				&-graf
+					display: none
+					&-case
+@media screen and (max-width: 340px)  
+	.case
+		&-control
+			margin-top: 660px
+			&-left
+				display: none
+			&-right
+				display: none
+			&-buttons
+				width: 100%
+				display: flex
+				justify-content: space-between
+				&-item
+		&-slider
+			&-slid
+				&-text
+					margin-top: 0
+					&-p
+						&-1
+				&-graf
+					display: none
+					&-case
+
+					

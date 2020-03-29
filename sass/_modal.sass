@@ -1,0 +1,113 @@
+.modal
+	display: none
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background: rgba(#2C364A, 0.75)
+	z-index: 999
+	opacity: 0
+	transition: 0.4s
+	color: #323232
+	line-height: 1.15
+	text-align: center
+	margin: 0
+	padding: 0
+	&-form
+		position: fixed
+		right: 0
+		width: 30%
+		background: #ffffff
+		height: 100vh
+		transform: translateX(100%)
+		transition: 0.4s
+		min-width: 400px
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-direction: column
+		max-width: 450px
+		&-null
+			width: 65px
+			height: 65px
+		&-exit
+			width: 65px
+			height: 65px
+			cursor: pointer
+			display: flex
+			align-items: center
+			justify-content: center
+			align-self: flex-end
+			&-img
+				background: #FFA700
+				width: 30px
+				height: 30px
+				clip-path: polygon(15% 0, 0 15%, 35% 50%, 0 85%, 15% 100%, 50% 65%, 85% 100%, 100% 85%, 65% 50%, 100% 15%, 85% 0, 50% 35%)
+				cursor: pointer
+				transition: 0.2s
+				pointer-events: none
+		&-text
+			width: 75%
+.contact-form
+	&__title
+		font-size: 28px
+		+bold
+	&__description
+		margin-top: 15px
+		font-size: 15px
+		line-height: 1.3
+	&__input
+		width: 100%
+		padding-top: 14px
+		padding-bottom: 15px
+		font-size: 13px
+		text-align: center
+		margin-top: 30px
+		background-color: #F2F2F2
+		border: none
+		font-size: 15px
+		color: #323232
+		transition: 0.2s
+		&:hover
+			box-shadow: 0 0 10px #0288D1
+		&-wrapper
+	&__error
+	&__button
+		margin-top: 20px
+		border: none
+		background: #FFA700
+		color: #323232
+		border-radius: 5px
+		padding-top: 18px
+		padding-bottom: 14px
+		font-size: 13px
+		text-transform: uppercase
+		transition: 0.2s
+		box-shadow: 0 0 8px #FFA700
+		width: 100%
+		+bold
+		&:hover
+			background: #FFA700
+			color: #323232
+			box-shadow: 0 0 20px #FFA700
+	&__description
+		&-bottom
+			margin-top: 40px
+			font-size: 12px
+			line-height: 1.3
+		&-a
+			font-size: 12px
+			text-decoration: none
+			color: #0288D1
+			padding-bottom: 1px
+			border-bottom: 1px dashed rgba(#0288D1, 1)
+			transition: 0.2s
+			&:hover
+				border-bottom: 1px dashed rgba(#0288D1, 0)
+
+@media screen and (max-width: 500px) 
+	.modal
+		&-form
+			width: 100%
+			min-width: 100%

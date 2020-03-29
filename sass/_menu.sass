@@ -1,0 +1,124 @@
+.menu
+	position: fixed
+	top: 0
+	display: none
+	// justify-content: center
+	width: 100%
+	background: #ffffff
+	height: 60px
+	z-index: 100
+	box-shadow: 0 0 20px rgba(#000000, 0.3)
+	color: #323232
+	opacity: 0
+	transition: 0.2s
+	&-container
+		width: 1160px
+		margin: 0 auto
+		display: flex
+		justify-content: space-between
+		height: 100%
+		align-items: center
+	&-logo
+		background-image: url(../img/logo.svg)
+		background-size: contain
+		width: 45px
+		height: 50px
+		background-repeat: no-repeat
+	&-nav
+		margin-top: 3px
+		display: flex
+		align-items: center
+		&-a
+			margin: 0 20px
+			font-size: 16px
+			color: #323232
+			text-decoration: none
+			padding-bottom: 1px
+			border-bottom: 1px dashed rgba(#0288D1, 1)
+			transition: 0.2s
+			&:hover
+				border-bottom: 1px dashed rgba(#0288D1, 0)
+				color: #0288D1
+	&-phone
+		margin-left: 10px
+		display: flex
+		&-button
+			border: 2px solid #FFA700
+			background: none
+			color: #323232
+			border-radius: 5px
+			padding: 10px 30px
+			font-size: 11px
+			text-transform: uppercase
+			margin-right: 30px
+			transition: 0.2s
+			&:hover
+				background: #FFA700
+				color: #323232
+				box-shadow: 0 0 10px #FFA700
+		&-info
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: flex-end
+			&-phone
+				margin-bottom: 5px
+				font-size: 18px
+				+bold
+				color: #323232
+				text-decoration: none
+			&-mail
+				font-size: 13px
+				color: #323232
+				text-decoration: none
+				padding-bottom: 1px
+				border-bottom: 1px dashed rgba(#0288D1, 1)
+				transition: 0.2s
+				&:hover
+					border-bottom: 1px dashed rgba(#0288D1, 0)
+					color: #0288D1
+	&-progress
+		position: fixed
+		left: 0
+		top: 60px
+		width: 0%
+		height: 4px
+		background-color: #0288D1
+		z-index: 100
+
+@media screen and (max-width: 1180px)  
+	.menu
+		&-container
+			padding: 0 20px
+			&-logo
+		&-phone
+			&-button
+				display: none
+@media screen and (max-width: 870px)
+	.menu
+		&-phone
+			display: none
+@media screen and (max-width: 670px)
+	.menu
+		&-nav
+			&-a
+				margin: 0 10px
+				font-size: 14px
+@media screen and (max-width: 540px)
+	.menu
+		&-nav
+			&-a
+				&:nth-child(2)
+					display: none
+@media screen and (max-width: 350px)
+	.menu
+		&-logo
+			width: 40px
+			height: 40px
+		&-nav
+			&-a
+				margin: 0 7px
+					
+		
+	
+	

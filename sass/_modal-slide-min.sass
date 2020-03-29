@@ -1,0 +1,109 @@
+.modal-slide-min
+	display: none
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background: rgba(#2C364A, 0.9)
+	z-index: 999
+	opacity: 0
+	transition: 0.4s
+	// display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	&-item
+		width: 80%
+		height: 90%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-left
+			width: 65px
+			height: 65px
+			cursor: pointer
+			display: flex
+			align-items: center
+			justify-content: center
+			&-img
+				width: 30px
+				height: 40px
+				clip-path: polygon(100% 0, 35% 50%, 100% 100%, 65% 100%, 0% 50%, 65% 0)
+				background: #ffffff
+				cursor: pointer
+				transition: 0.2s
+		&-img
+			// background-color: green
+			width: 100%
+			height: 100%
+			background-image: url(../img/burdmando.jpg)
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+		&-right
+			display: flex
+			flex-direction: column
+			width: 50px
+			justify-content: space-between
+			align-items: center
+			height: 100%
+			&-exit
+				width: 65px
+				height: 65px
+				cursor: pointer
+				display: flex
+				align-items: center
+				justify-content: center
+				&-img
+					background: #ffffff
+					width: 30px
+					height: 30px
+					clip-path: polygon(15% 0, 0 15%, 35% 50%, 0 85%, 15% 100%, 50% 65%, 85% 100%, 100% 85%, 65% 50%, 100% 15%, 85% 0, 50% 35%)
+					cursor: pointer
+					transition: 0.2s
+			&-right
+				width: 65px
+				height: 65px
+				cursor: pointer
+				display: flex
+				align-items: center
+				justify-content: center
+				&-img
+					width: 30px
+					height: 40px
+					clip-path: polygon(35% 0, 100% 50%, 35% 100%, 0 100%, 65% 50%, 0 0)
+					background: #ffffff
+					cursor: pointer
+					transition: 0.2s
+			&-null
+				width: 65px
+				height: 65px
+	
+@media screen and (max-width: 500px)
+	.modal-slide-min
+		&-item
+			width: 100%
+			&-left
+				width: 40px
+				height: 40px
+				&-img
+					width: 20px
+					height: 30px
+			&-right
+				width: 40px
+				&-exit
+					width: 40px
+					height: 40px
+					&-img
+						width: 25px
+						height: 25px
+				&-right
+					width: 40px
+					height: 40px
+					&-img
+						width: 20px
+						height: 30px
+				&-null
+					width: 40px
+					height: 40px

@@ -1,0 +1,127 @@
+.contacts
+	padding-top: 150px
+	color: #323232
+	line-height: 1.15
+	background: #ffffff
+	padding-bottom: 100px
+	&-block
+		display: flex
+		justify-content: space-between
+		&-map
+			display: flex
+			width: 38%
+			height: 460px
+			box-shadow: 0 0 40px rgba(#000000, 0.4)
+		&-text
+			width: 55%
+			&-h
+				font-size: 35px
+				+bold
+				margin-bottom: 50px
+			&-phone
+				&-a
+					display: block
+					font-size: 20px
+					color: #323232
+					+bold
+					text-decoration: none
+				&-button
+					margin-top: 10px
+					margin-bottom: 25px
+					font-size: 15px
+					color: #0288D1
+					text-decoration: none
+					padding-bottom: 1px
+					border: none
+					border-bottom: 1px dashed rgba(#0288D1, 1)
+					transition: 0.2s
+					&:hover
+						border-bottom: 1px dashed rgba(#0288D1, 0)
+						color: #0288D1
+			&-geo
+				padding: 25px 0 15px 0
+				border-top: 1px solid rgba(#D2D2D2, 1)
+				border-bottom: 1px solid rgba(#D2D2D2, 1)
+				&-1
+					margin-bottom: 10px
+					display: flex
+					&-a
+						font-size: 15px
+						color: #0288D1
+						text-decoration: none
+						padding-bottom: 1px
+						border: none
+						border-bottom: 1px dashed rgba(#0288D1, 1)
+						transition: 0.2s
+						+regular
+						&:hover
+							border-bottom: 1px dashed rgba(#0288D1, 0)
+							color: #0288D1
+					&-img
+						width: 15px
+						max-height: 18px
+						margin-right: 20px
+					&-p
+						font-size: 15px
+						width: 80%
+			&-requisite
+				&-h3
+					margin: 25px 0 20px 0
+					font-size: 20px
+					+bold
+				&-1
+					display: flex
+					align-items: center
+					margin-bottom: 10px
+					&-p
+						font-size: 13px
+						text-transform: uppercase
+						color: #969696
+						height: 10px
+						width: 25%
+					&-p2
+						font-size: 15px
+						width: 75%
+
+@media screen and (max-width: 500px)  
+	.contacts
+		&-text
+			font-size: 30px
+@media screen and (max-width: 1050px)  
+	.contacts
+		&-block
+			flex-direction: column
+			&-map
+				margin-top: 50px
+				width: 460px
+				box-shadow: 0 0 20px rgba(#000000, 0.4)
+			&-text
+				width: 100%
+				&-requisite
+					&-1
+						&-p
+							width: 150px
+@media screen and (max-width: 600px)  
+	.contacts
+		&-block
+			&-map
+			&-text
+				&-requisite
+					display: none
+					&-h3
+						display: none
+@media screen and (max-width: 500px)  
+	.contacts
+		&-block
+			&-map
+				width: 100%
+			&-text
+				&-geo
+					&-1
+						&-a
+							font-size: 14px
+						&-img
+							font-size: 14px
+						&-p
+							font-size: 14px
+						

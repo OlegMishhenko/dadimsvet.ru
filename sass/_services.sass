@@ -1,0 +1,69 @@
+.services
+	padding-top: 150px
+	color: #ffffff
+	line-height: 1.3
+	background: #222222
+	padding-bottom: 30px
+	&-text
+		font-size: 35px
+		+bold
+		margin-bottom: 90px
+	&-block
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&-item
+			display: flex
+			margin-bottom: 70px
+			width: calc(86% / 3)
+			&-img
+				margin-right: 30px
+				width: 50px
+				height: 50px
+				min-width: 50px
+			&-text
+				&-1
+					+bold
+					font-size: 18px
+					margin-bottom: 25px
+				&-2
+					font-size: 16px
+					margin-bottom: 20px
+				&-button
+					margin-top: 10px
+					border: none
+					background: #FFA700
+					color: #323232
+					border-radius: 5px
+					padding: 10px 20px 8px 20px
+					font-size: 14px
+					transition: 0.2s
+					box-shadow: 0 0 8px #FFA700
+					+regular
+					&:hover
+						background: #FFA700
+						color: #323232
+						box-shadow: 0 0 15px #FFA700
+
+@media screen and (max-width: 900px)  
+	.services
+		&-block
+			&-item
+				width: 45%
+				&-img
+					margin-right: 20px
+					width: 40px
+					height: 40px
+					min-width: 40px
+@media screen and (max-width: 530px)  
+	.services
+		&-text
+			font-size: 30px
+		&-block
+			&-item
+				width: 100%
+				&-text
+					&-1
+						font-size: 16px
+					&-2
+						font-size: 15px
