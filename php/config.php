@@ -35,7 +35,7 @@
 		const HOST = 'mail.hosting.reg.ru:';
 		const LOGIN = 'info@dadimsvet.ru';
 		const PASS = '12345AaAaW';
-		const PORT = '993';
+		const PORT = '465';
 
 	// *** /SMTP *** //
 
