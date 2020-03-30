@@ -32,18 +32,18 @@
     // *** SMTP *** //
  
         require_once($_SERVER['DOCUMENT_ROOT'] . 'php/smtp.php');
-        const HOST = 'ssl://smtp.yandex.ru';
-        const LOGIN = 'sender@yandex.ru';
-        const PASS = 'senderPass';
-        const PORT = '465';
+        const HOST = 'mail.hosting.reg.ru:';
+        const LOGIN = 'info@dadimsvet.ru';
+        const PASS = '12345AaAaW';
+        const PORT = '995';
  
     // *** /SMTP *** //
  
         // Почта с которой будет приходить письмо
-    const SENDER = 'sender@yandex.ru';
+    const SENDER = 'info@dadimsvet.ru';
      
     // Почта на которую будет приходить письмо
-    const CATCHER = 'catcher@mail.ru';
+    const CATCHER = 'info@dadimsvet.ru';
      
     // Тема письма
     const SUBJECT = 'Заявка с сайта';
