@@ -1,16 +1,16 @@
 <?php
-$msgs = [];
-    if (isset($_POST['name']) ) {
+    $msgs = [];
+	if (isset($_POST['name']) ) {
         if(empty($_POST['name']) && NAMEISREQUIRED) {
             $msgs['name'] = MSGSNAMEERROR;
         } else {
             if (!empty($_POST['name'])) {
                 $name = "<b>Имя: </b>" . trim(strip_tags($_POST['name'])) . "<br>";
             }
-             
+            
         }
     }
- 
+
     if (isset($_POST['tel']) ) {
         if(empty($_POST['tel']) && TELISREQUIRED) {
             $msgs['tel'] = MSGSTELERROR;
@@ -20,7 +20,7 @@ $msgs = [];
             }
         }
     }
- 
+
     if (isset($_POST['email']) ) {
         if(empty($_POST['email']) && EMAILISREQUIRED) {
             $msgs['email'] = MSGSEMAILERROR;
@@ -34,15 +34,14 @@ $msgs = [];
             }
         } 
     }
-     
+    
     if((empty($_POST['email']) && empty($_POST['tel'])) && (!EMAILISREQUIRED && !TELISREQUIRED)) {
-        $msgs['attantion'] = 'Заполните хотя бы одно контактное поле для связи с вами';
+        $msgs['attantion'] = 'Заполните хотя бы одно контактное поле для связии с вами';
     }
- 
-    if ($msgs) {
-      echo json_encode($msgs);
-      die;
-    } else {
-      $msgs['success'] = MSGSSUCCESS;
-		}
-?>
+
+	if ($msgs) {
+	    echo json_encode($msgs);
+		die;
+	} else {
+        $msgs['success'] = MSGSSUCCESS;
+    }

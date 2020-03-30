@@ -5,6 +5,11 @@
 		// Сохраняем в переменную form id текущей формы, на которой сработало событие submit
 		let form = $('#' + $(this).attr('id'))[0];
 
+		// Сохраняем в переменные значения полей (для валидации)
+		// let inpName = $(this).find('.contact-form__input_name').val();
+		// let inpEmail = $(this).find('.contact-form__input_email').val();
+		// let inpTel = $(this).find('.contact-form__input_tel').val();
+
 		// Сохраняем в переменные дивы, в которые будем выводить текст ошибки
 		let inpNameError = $(this).find('.contact-form__error_name');
 		let inpEmailError = $(this).find('.contact-form__error_email');
@@ -15,12 +20,13 @@
 
 		let fd = new FormData(form);
 		$.ajax({
-			url: "php/mail.php",
+			url: "/mail/php/mail.php",
 			type: "POST",
 			data: fd,
 			processData: false,
 			contentType: false,
 			success: function success(res) {
+				console.log(res);
 				let respond = $.parseJSON(res);
 
 				if (respond.name) {
@@ -48,7 +54,7 @@
 				}
 
 				if (respond.success) {
-					window.location.replace("/success.php?status=success");
+					window.location.replace("/thank-you-page.php?status=success"); 
 				}
 			},
 		});
