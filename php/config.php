@@ -31,19 +31,19 @@
 
 	// *** SMTP *** //
 
-		require_once($_SERVER['DOCUMENT_ROOT'] . '/mail/phpmailer/smtp.php');
-		const HOST = 'ssl://smtp.yandex.ru';
-		const LOGIN = 'vtopetop@yandex.ru';
-		const PASS = 'zz0304ZZvtopetop';
-		const PORT = '465';
+		require_once($_SERVER['DOCUMENT_ROOT'] . '/phpmailer/smtp.php');
+		const HOST = 'mail.hosting.reg.ru:';
+		const LOGIN = 'info@dadimsvet.ru';
+		const PASS = '12345AaAaW';
+		const PORT = '993';
 
 	// *** /SMTP *** //
 
   // Почта с которой будет приходить письмо
-	const SENDER = 'vtopetop@yandex.ru';
+	const SENDER = 'info@dadimsvet.ru';
 	
 	// Почта на которую будет приходить письмо
-	const CATCHER = 'dima.d.v@list.ru';
+	const CATCHER = '89529232173@mail.ru';
 	
 	// Тема письма
 	const SUBJECT = 'Заявка с сайта';

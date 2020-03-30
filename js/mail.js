@@ -20,7 +20,7 @@
 
 		let fd = new FormData(form);
 		$.ajax({
-			url: "/mail/php/mail.php",
+			url: "/php/mail.php",
 			type: "POST",
 			data: fd,
 			processData: false,
@@ -54,7 +54,7 @@
 				}
 
 				if (respond.success) {
-					window.location.replace("/thank-you-page.php?status=success"); 
+					window.location.replace("/success.php?status=success"); 
 				}
 			},
 		});
