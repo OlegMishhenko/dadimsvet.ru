@@ -40,10 +40,10 @@
     // *** /SMTP *** //
  
         // Почта с которой будет приходить письмо
-    const SENDER = 'info@dadimsvet.ru';
+    const SENDER = 'mail.dadimsvet.ru';
      
     // Почта на которую будет приходить письмо
-    const CATCHER = 'info@dadimsvet.ru';
+    const CATCHER = 'mail.dadimsvet.ru';
      
     // Тема письма
     const SUBJECT = 'Заявка с сайта';
