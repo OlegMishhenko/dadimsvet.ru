@@ -11,6 +11,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Заказ звонка';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер телефона, мы перезвоним (в рабочее время)';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать звонок';
+		document.querySelector('.contact-form__input_name').value = 'заказ звонка (навбар, меню, контакты, футер)';
 	};
 	if (click.className == "main-button" || click.className == "problems-buttom-button") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -22,6 +23,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Заказ расчета';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения и составления расчета';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать расчет';
+		document.querySelector('.contact-form__input_name').value = 'заказ звонка (заголовок, проблемы)';
 	};
 	if (click.id == "button-50kVt") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -33,7 +35,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Подключение мощности от 50 до 300 кВт';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать подключение';
-		document.querySelector('.contact-form__input_name').value = 'Подключение мощности от 50 до 300 кВт';
+		document.querySelector('.contact-form__input_name').value = 'подключение мощности от 50 до 300 кВт';
 	};
 	if (click.id == "button-300kVt") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -45,6 +47,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Подключение мощности от 300 до 670 кВт';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать подключение';
+		document.querySelector('.contact-form__input_name').value = 'подключение мощности от 300 до 670 кВт';
 	};
 	if (click.id == "button-670kVt") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -56,6 +59,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Подключение мощности более 670 кВт';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать подключение';
+		document.querySelector('.contact-form__input_name').value = 'подключение мощности более 670 кВт';
 	};
 	if (click.id == "button-snij") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -67,6 +71,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Снижение стоимости подключения';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Снизить стоимость';
+		document.querySelector('.contact-form__input_name').value = 'снижение стоимости подключения';
 	};
 	if (click.id == "button-yvel") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -78,6 +83,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Увеличение мощности';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Увеличить мощность';
+		document.querySelector('.contact-form__input_name').value = 'увеличение мощности';
 	};
 	if (click.id == "button-otkaz") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -89,6 +95,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Подключение при получении отказа';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать подключение';
+		document.querySelector('.contact-form__input_name').value = 'подключение при получении отказа';
 	};
 	if (click.id == "button-proekt") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -100,6 +107,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Выполнение проекта и согласования';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать услугу';
+		document.querySelector('.contact-form__input_name').value = 'выполнение проекта и согласования';
 	};
 	if (click.id == "button-uskor") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -111,6 +119,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Ускорение процесса подключения';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать услугу';
+		document.querySelector('.contact-form__input_name').value = 'ускорение процесса подключения';
 	};
 	if (click.id == "button-key") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -122,6 +131,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Подключение<br>«Под Ключ»';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать подключение';
+		document.querySelector('.contact-form__input_name').value = 'подключение «под ключ»';
 	};
 	if (click.className == "connection-button") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
@@ -133,6 +143,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Подключение к электросетям';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать подключение';
+		document.querySelector('.contact-form__input_name').value = 'заказ звонка (призыв к действию)';
 	};
 	if (click.className == "modal" || click.className == "modal-form-exit") {
 		document.querySelector('html').style.overflowY = null;

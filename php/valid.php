@@ -5,7 +5,7 @@
             $msgs['name'] = MSGSNAMEERROR;
         } else {
             if (!empty($_POST['name'])) {
-                $name = "<b>Имя: </b>" . trim(strip_tags($_POST['name'])) . "<br>";
+                $name = "<b>Тема: </b>" . trim(strip_tags($_POST['name'])) . "<br>";
             }
             
         }
