@@ -33,6 +33,7 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.contact-form__title').innerHTML = 'Подключение мощности от 50 до 300 кВт';
 		document.querySelector('.contact-form__description').innerHTML = 'Оставьте свой номер, вам перезвонит специалист (в рабочее время) для уточнения деталей вашего подключения';
 		document.querySelector('.contact-form__button').innerHTML = 'Заказать подключение';
+		document.querySelector('.contact-form__input_name').value = 'Подключение мощности от 50 до 300 кВт';
 	};
 	if (click.id == "button-300kVt") {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
