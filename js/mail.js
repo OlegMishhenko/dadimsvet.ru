@@ -36,7 +36,7 @@
 				}
 
 				if (respond.tel) {
-					inpTelError.text(respond.tel);
+					inpTelError.text(respond.tel).css('color', '#e84a66').fadeIn();;
 				} else {
 					inpTelError.text('');
 				}
