@@ -16,7 +16,7 @@
 		let inpTelError = $(this).find('.contact-form__error_tel');
 
 		// Сохраняем в переменную див, в который будем выводить сообщение формы
-		// let formDescription = $(this).find('.contact-form__description');
+		let formDescription = $(this).find('.contact-form__description-status');
 
 		let fd = new FormData(form);
 		$.ajax({
@@ -47,11 +47,11 @@
 					inpEmailError.text('');
 				}
 
-				// if (respond.attantion) {
-				// 	formDescription.text(respond.attantion).css('color', '#e84a66').fadeIn();
-				// } else {
-				// 	formDescription.text('');
-				// }
+				if (respond.attantion) {
+					formDescription.text(respond.attantion).css('color', '#e84a66').fadeIn();
+				} else {
+					formDescription.text('');
+				}
 
 				if (respond.success) {
 					window.location.replace("/success.php?status=success"); 
