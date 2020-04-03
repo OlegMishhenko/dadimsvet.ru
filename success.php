@@ -28,7 +28,8 @@
 					</a>
 					<div class="navbar-contacts">
 						<div class="navbar-contacts-info">
-							<a class="navbar-contacts-info-phone" href="tel:+78002225965">8 (800) 222-59-65</a>
+							<!-- <a class="navbar-contacts-info-phone" href="tel:+78002225965">8 (800) 222-59-65</a> -->
+							<p class="navbar-contacts-info-p">Напишите нам:</p>
 							<a class="navbar-contacts-info-mail" href="mailto:info@dadimsvet.ru">info@dadimsvet.ru</a>
 						</div>
 					</div>

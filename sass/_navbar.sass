@@ -32,15 +32,16 @@
 			+bold
 	&-contacts
 		display: flex
+		flex-direction: row-reverse
 		&-button
 			border: 2px solid #FFA700
 			background: none
 			color: #ffffff
 			border-radius: 5px
-			padding: 0 28px
+			padding: 10px 28px
 			font-size: 11px
 			text-transform: uppercase
-			margin-right: 30px
+			margin-left: 30px
 			transition: 0.2s
 			&:hover
 				background: #FFA700
@@ -49,7 +50,14 @@
 		&-info
 			display: flex
 			flex-direction: column
-			align-items: flex-end
+			align-items: flex-start
+			justify-content: center
+			&-p
+				margin-bottom: 5px
+				font-size: 13px
+				color: #ffffff
+				+bold
+				text-decoration: none
 			&-phone
 				margin-bottom: 5px
 				font-size: 20px

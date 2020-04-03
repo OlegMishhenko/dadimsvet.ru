@@ -54,15 +54,21 @@
 					border-bottom: 1px dashed rgba(#0288D1, 0)
 		&-phone
 			display: flex
-			flex-direction: column
+			flex-direction: column-reverse
 			align-items: flex-end
+			justify-content: flex-end
+			&-p
+				margin-bottom: 5px
+				font-size: 14px
+				+bold
+				color: #ffffff
+				text-decoration: none
 			&-number
 				font-size: 20px
 				+bold
 				color: #ffffff
 				text-decoration: none
 			&-mail
-				margin-top: 5px
 				font-size: 14px
 				color: #0288D1
 				display: block
@@ -73,7 +79,7 @@
 				&:hover
 					border-bottom: 1px dashed rgba(#0288D1, 0)
 			&-button
-				margin-top: 85px
+				margin-bottom: 30px
 				border: none
 				background: #FFA700
 				color: #323232
