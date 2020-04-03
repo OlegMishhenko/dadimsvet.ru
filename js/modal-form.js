@@ -138,5 +138,6 @@ document.addEventListener("click", function (e) {
 		document.querySelector('.modal-form').style.transform = 'translateX(100%)';
 		setTimeout("document.querySelector('.modal').style.opacity = '0'", 200);
 		setTimeout("document.querySelector('.modal').style.display = 'none'", 600);
+		setTimeout("document.querySelector('.contact-form__description-status').innerHTML = ''", 600);
 	};
 });
