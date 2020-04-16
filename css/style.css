@@ -232,7 +232,7 @@ a:hover, button:hover {
   color: #FFA700;
   font-family: 'Gotham Pro Bold', sans-serif;
   font-size: 50px;
-  text-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+  text-shadow: 0 0 40px rgba(50, 50, 50, 0.7);
 }
 
 .main-text-2 {
@@ -241,7 +241,7 @@ a:hover, button:hover {
   color: #ffffff;
   font-family: 'Gotham Pro Regular', sans-serif;
   font-size: 50px;
-  text-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+  text-shadow: 0 0 40px rgba(50, 50, 50, 0.7);
 }
 
 .main-button {
@@ -274,7 +274,7 @@ a:hover, button:hover {
   display: flex;
   color: #ffffff;
   font-size: 21px;
-  text-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+  text-shadow: 0 0 25px rgba(50, 50, 50, 0.7);
   font-family: 'Gotham Pro Regular', sans-serif;
 }
 
