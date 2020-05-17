@@ -1755,6 +1755,7 @@ a:hover, button:hover {
 
 @media screen and (max-width: 890px) {
   .case-text {
+    text-align: left;
     margin-bottom: 60px;
   }
   .case-control {
