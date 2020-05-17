@@ -236,7 +236,6 @@ a:hover, button:hover {
   color: #FFA700;
   font-family: 'Gotham Pro Bold', sans-serif;
   font-size: 50px;
-  text-shadow: 0 0 40px black;
   margin-bottom: 30px;
 }
 
@@ -246,7 +245,6 @@ a:hover, button:hover {
   color: #ffffff;
   font-family: 'Gotham Pro Regular', sans-serif;
   font-size: 40px;
-  text-shadow: 0 0 40px black;
 }
 
 .main-button {
@@ -279,7 +277,6 @@ a:hover, button:hover {
   display: flex;
   color: #ffffff;
   font-size: 21px;
-  text-shadow: 0 0 25px black;
   font-family: 'Gotham Pro Regular', sans-serif;
 }
 
@@ -491,10 +488,10 @@ a:hover, button:hover {
     text-align: center;
   }
   .main-text-1 {
-    font-size: 33px;
+    font-size: 30px;
   }
   .main-text-2 {
-    font-size: 23px;
+    font-size: 20px;
   }
   .main-statistic {
     font-size: 18px;
