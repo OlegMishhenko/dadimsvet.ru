@@ -227,12 +227,17 @@ a:hover, button:hover {
   margin-top: 150px;
 }
 
+.main-text {
+  line-height: 1.3;
+}
+
 .main-text-1 {
   display: block;
   color: #FFA700;
   font-family: 'Gotham Pro Bold', sans-serif;
   font-size: 50px;
-  text-shadow: 0 0 40px rgba(50, 50, 50, 0.7);
+  text-shadow: 0 0 40px black;
+  margin-bottom: 30px;
 }
 
 .main-text-2 {
@@ -240,8 +245,8 @@ a:hover, button:hover {
   display: block;
   color: #ffffff;
   font-family: 'Gotham Pro Regular', sans-serif;
-  font-size: 50px;
-  text-shadow: 0 0 40px rgba(50, 50, 50, 0.7);
+  font-size: 40px;
+  text-shadow: 0 0 40px black;
 }
 
 .main-button {
@@ -268,13 +273,13 @@ a:hover, button:hover {
 }
 
 .main-statistic {
-  margin-top: 23px;
+  margin-top: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: #ffffff;
   font-size: 21px;
-  text-shadow: 0 0 25px rgba(50, 50, 50, 0.7);
+  text-shadow: 0 0 25px black;
   font-family: 'Gotham Pro Regular', sans-serif;
 }
 
@@ -353,7 +358,7 @@ a:hover, button:hover {
     font-size: 45px;
   }
   .main-text-2 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .main-statistic {
     line-height: 1.3;
@@ -383,7 +388,7 @@ a:hover, button:hover {
     font-size: 45px;
   }
   .main-text-2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .main-statistic {
     -webkit-box-pack: justify;
@@ -417,10 +422,10 @@ a:hover, button:hover {
     text-align: center;
   }
   .main-text-1 {
-    font-size: 45px;
+    font-size: 40px;
   }
   .main-text-2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .main-statistic {
     -webkit-box-pack: justify;
@@ -458,7 +463,7 @@ a:hover, button:hover {
     font-size: 40px;
   }
   .main-text-2 {
-    font-size: 35px;
+    font-size: 25px;
   }
   .main-button {
     padding: 20px 0 17px 0;
@@ -486,10 +491,10 @@ a:hover, button:hover {
     text-align: center;
   }
   .main-text-1 {
-    font-size: 35px;
+    font-size: 33px;
   }
   .main-text-2 {
-    font-size: 25px;
+    font-size: 23px;
   }
   .main-statistic {
     font-size: 18px;
@@ -1153,6 +1158,7 @@ a:hover, button:hover {
 }
 
 .case-text {
+  text-align: center;
   font-size: 35px;
   font-family: 'Gotham Pro Bold', sans-serif;
   margin-bottom: 90px;
