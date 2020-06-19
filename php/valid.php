@@ -23,8 +23,8 @@
     }
 
     if (isset($_POST['power']) ) {
-        if(empty($_POST['power']) && NAMEISREQUIRED) {
-            $msgs['power'] = MSGSNAMEERROR;
+        if(empty($_POST['power']) && POWISREQUIRED) {
+            $msgs['power'] = MSGSPOWERROR;
         } else {
             if (!empty($_POST['power'])) {
                 $power = "<b>Тема: </b>" . trim(strip_tags($_POST['power'])) . "<br>";
@@ -51,7 +51,7 @@
         $msgs['attantion'] = 'Введите контактный номер телефона';
     }
 
-    if((empty($_POST['power'])) && !TELISREQUIRED) {
+    if((empty($_POST['power'])) && !POWISREQUIRED) {
         $msgs['attantion'] = 'Введите требуемую мощность в кВт';
     }
 
