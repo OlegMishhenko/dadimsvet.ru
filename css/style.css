@@ -235,16 +235,16 @@ a:hover, button:hover {
   display: block;
   color: #FFA700;
   font-family: 'Gotham Pro Bold', sans-serif;
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 45px;
+  margin-bottom: 25px;
 }
 
 .main-text-2 {
-  margin-top: 15px;
+  margin-top: 12px;
   display: block;
   color: #ffffff;
   font-family: 'Gotham Pro Regular', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 .main-button {
@@ -271,7 +271,7 @@ a:hover, button:hover {
 }
 
 .main-statistic {
-  margin-top: 45px;
+  margin-top: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
