@@ -223,10 +223,6 @@ a:hover, button:hover {
   }
 }
 
-.header {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .main {
   margin-top: 150px;
 }
@@ -2103,6 +2099,7 @@ a:hover, button:hover {
   margin-top: 15px;
   font-size: 15px;
   line-height: 1.3;
+  margin-bottom: 15px;
 }
 
 .contact-form__description-status {
@@ -2112,17 +2109,18 @@ a:hover, button:hover {
 
 .contact-form__input {
   width: 100%;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   font-size: 13px;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: #F2F2F2;
   border: none;
   font-size: 15px;
   color: #323232;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  font-family: 'Gotham Pro Light', sans-serif;
 }
 
 .contact-form__input:hover {
@@ -2131,7 +2129,7 @@ a:hover, button:hover {
 }
 
 .contact-form__button {
-  margin-top: 15px;
+  margin-top: 25px;
   border: none;
   background: #FFA700;
   color: #323232;
@@ -4382,7 +4380,7 @@ ol {
 }
 
 .thank-you-page {
-  background-image: url("../img/lep-bg-s.jpg");
+  background-image: url("../img/bg.jpg");
   height: 100vh;
   background-size: cover;
   line-height: 1.3;

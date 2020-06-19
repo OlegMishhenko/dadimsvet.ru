@@ -1,15 +1,16 @@
 <?php
     $msgs = [];
-	if (isset($_POST['name']) ) {
-        if(empty($_POST['name']) && NAMEISREQUIRED) {
-            $msgs['name'] = MSGSNAMEERROR;
-        } else {
-            if (!empty($_POST['name'])) {
-                $name = "<b>Тема: </b>" . trim(strip_tags($_POST['name'])) . "<br>";
-            }
+
+	// if (isset($_POST['name']) ) {
+    //     if(empty($_POST['name']) && NAMEISREQUIRED) {
+    //         $msgs['name'] = MSGSNAMEERROR;
+    //     } else {
+    //         if (!empty($_POST['name'])) {
+    //             $name = "<b>Тема: </b>" . trim(strip_tags($_POST['name'])) . "<br>";
+    //         }
             
-        }
-    }
+    //     }
+    // }
 
     if (isset($_POST['tel']) ) {
         if(empty($_POST['tel']) && TELISREQUIRED) {
@@ -18,6 +19,17 @@
             if (!empty($_POST['tel'])) {
                 $tel = "<b>Телефон: </b> " . trim(strip_tags($_POST['tel'])) . "<br>";
             }
+        }
+    }
+
+    if (isset($_POST['power']) ) {
+        if(empty($_POST['power']) && NAMEISREQUIRED) {
+            $msgs['power'] = MSGSNAMEERROR;
+        } else {
+            if (!empty($_POST['power'])) {
+                $power = "<b>Тема: </b>" . trim(strip_tags($_POST['power'])) . "<br>";
+            }
+            
         }
     }
 
@@ -37,6 +49,10 @@
     
     if((empty($_POST['tel'])) && !TELISREQUIRED) {
         $msgs['attantion'] = 'Введите контактный номер телефона';
+    }
+
+    if((empty($_POST['power'])) && !TELISREQUIRED) {
+        $msgs['attantion'] = 'Введите требуемую мощность в кВт';
     }
 
 	if ($msgs) {

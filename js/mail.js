@@ -11,9 +11,9 @@
 		// let inpTel = $(this).find('.contact-form__input_tel').val();
 
 		// Сохраняем в переменные дивы, в которые будем выводить текст ошибки
-		let inpNameError = $(this).find('.contact-form__error_name');
 		let inpEmailError = $(this).find('.contact-form__error_email');
 		let inpTelError = $(this).find('.contact-form__error_tel');
+		let inpPowerError = $(this).find('.contact-form__error_power');
 
 		// Сохраняем в переменную див, в который будем выводить сообщение формы
 		let formDescription = $(this).find('.contact-form__description-status');
@@ -29,10 +29,10 @@
 				console.log(res);
 				let respond = $.parseJSON(res);
 
-				if (respond.name) {
-					inpNameError.text(respond.name);
+				if (respond.power) {
+					inpPowerError.text(respond.power);
 				} else {
-					inpNameError.text('');
+					inpPowerError.text('');
 				}
 
 				if (respond.tel) {
