@@ -27,7 +27,7 @@
             $msgs['power'] = MSGSPOWERROR;
         } else {
             if (!empty($_POST['power'])) {
-                $power = "<b>Тема: </b>" . trim(strip_tags($_POST['power'])) . "<br>";
+                $power = "<b>Мощность: </b>" . trim(strip_tags($_POST['power'])) . "<br>";
             }
             
         }
