@@ -2,7 +2,7 @@
 	// *** Настройка обязательности полей, в случае если они присутствуют в вашей форме
 
 	// Имя
-	const POWISREQUIRED = true;
+	const POWISREQUIRED = false;
 	const MSGSPOWERROR = "⚠ Поле обязательно для заполнения";
 
 	// Телефон
