@@ -2128,6 +2128,12 @@ a:hover, button:hover {
           box-shadow: 0 0 10px #0288D1;
 }
 
+.contact-form__error {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #e84a66;
+}
+
 .contact-form__button {
   margin-top: 25px;
   border: none;

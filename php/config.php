@@ -2,12 +2,12 @@
 	// *** Настройка обязательности полей, в случае если они присутствуют в вашей форме
 
 	// Имя
-	const POWISREQUIRED = false;
-	const MSGSPOWERROR = "⚠ Поле обязательно для заполнения";
+	const POWISREQUIRED = true;
+	const MSGSPOWERROR = "Введите требуемую мощность в кВт";
 
 	// Телефон
-	const TELISREQUIRED = false;
-	const MSGSTELERROR = "⚠ Поле обязательно для заполнения";
+	const TELISREQUIRED = true;
+	const MSGSTELERROR = "Введите контактный номер телефона";
 
 	// Email
 	const EMAILISREQUIRED = false;
