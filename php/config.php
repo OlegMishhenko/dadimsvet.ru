@@ -1,7 +1,11 @@
 <?
 	// *** Настройка обязательности полей, в случае если они присутствуют в вашей форме
 
-	// Имя
+  // Тема
+	const NAMEISREQUIRED = false;
+	const MSGSNAMEERROR = "Тема не указана";
+
+	// Мощность
 	const POWISREQUIRED = true;
 	const MSGSPOWERROR = "Введите требуемую мощность в кВт";
 

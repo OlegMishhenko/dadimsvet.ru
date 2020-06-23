@@ -1,16 +1,16 @@
 <?php
     $msgs = [];
 
-	// if (isset($_POST['name']) ) {
-    //     if(empty($_POST['name']) && NAMEISREQUIRED) {
-    //         $msgs['name'] = MSGSNAMEERROR;
-    //     } else {
-    //         if (!empty($_POST['name'])) {
-    //             $name = "<b>Тема: </b>" . trim(strip_tags($_POST['name'])) . "<br>";
-    //         }
+	if (isset($_POST['name']) ) {
+        if(empty($_POST['name']) && NAMEISREQUIRED) {
+            $msgs['name'] = MSGSNAMEERROR;
+        } else {
+            if (!empty($_POST['name'])) {
+                $name = "<b>Тема: </b>" . trim(strip_tags($_POST['name'])) . "<br>";
+            }
             
-    //     }
-    // }
+        }
+    }
 
     if (isset($_POST['tel']) ) {
         if(empty($_POST['tel']) && TELISREQUIRED) {

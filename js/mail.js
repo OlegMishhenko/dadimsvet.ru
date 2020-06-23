@@ -14,6 +14,7 @@
 		let inpEmailError = $(this).find('.contact-form__error_email');
 		let inpTelError = $(this).find('.contact-form__error_tel');
 		let inpPowerError = $(this).find('.contact-form__error_power');
+		let inpNameError = $(this).find('.contact-form__error_name');
 
 		// Сохраняем в переменную див, в который будем выводить сообщение формы
 		let formDescription = $(this).find('.contact-form__description-status');
@@ -28,6 +29,12 @@
 			success: function success(res) {
 				console.log(res);
 				let respond = $.parseJSON(res);
+
+				if (respond.name) {
+					inpNameError.text(respond.name);
+				} else {
+					inpNameError.text('');
+				}
 
 				if (respond.power) {
 					inpPowerError.text(respond.power);
