@@ -2436,7 +2436,28 @@
     </div>
     <!-- /.modal-slide-min -->
 
-
+    <script type='text/javascript'>
+        (function () {
+            window['yandexChatWidgetCallback'] = function () {
+                try {
+                    window.yandexChatWidget = new Ya.ChatWidget({
+                        guid: '7d606fe2-8aa2-4783-8ef8-5d6a4768e828',
+                        buttonText: 'Чат со специалистом',
+                        title: 'Компания "ТЭС"',
+                        theme: 'light',
+                        collapsedDesktop: 'never',
+                        collapsedTouch: 'always'
+                    });
+                } catch (e) { }
+            };
+            var n = document.getElementsByTagName('script')[0],
+                s = document.createElement('script');
+            s.async = true;
+            s.charset = 'UTF-8';
+            s.src = 'https://yastatic.net/s3/chat/widget.js';
+            n.parentNode.insertBefore(s, n);
+        })();
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/scroll.js"></script>
